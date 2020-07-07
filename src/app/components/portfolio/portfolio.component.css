@@ -1,27 +1,20 @@
-.project-description {
-  text-align: center;
-}
-
 .project-title {
-  display: inline-block;
-  width: 50%;
+  text-align: center;
 }
 
-.project-year {
-  text-align: center;
-  width: 20%;
-  background-color: teal;
-  color: white;
+.project-description {
+  display: inline-block;
+  text-align: justify;
 }
 
 .stack {
   text-align: center;
 }
 
-.skill-list {
+.filters {
   list-style-type: none;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px 0;
 }
 
 .skill {
@@ -32,13 +25,51 @@
 
 .skill-item {
   padding: 6px;
-  border-top: 1px solid dodgerblue;
-  border-bottom: 1px solid dodgerblue;
+  border-top: 1px solid darkblue;
+  border-bottom: 1px solid darkblue;
 }
 
 .skill-item:hover {
   width: 80px;
-  background: dodgerblue;
+  background: darkblue;
   color: white;
   text-decoration: none;
+}
+.links {
+  margin: 0 auto;
+}
+
+/* Project title */
+
+.project {
+  border: 1px solid darkblue;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.project-image {
+  text-align: center;
+}
+
+.project-image img {
+  height: 8em;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-link {
+  background: darkblue;
+  color: white;
+  margin: 0 30px;
+  padding: 4px;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background: white;
+  color: darkblue;
+  border: 1px solid darkblue;
 }

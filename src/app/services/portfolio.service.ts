@@ -1,11 +1,10 @@
-import { Observable } from 'rxjs';
+import { Project } from './../models/project';
+import { Projects } from '../models/projects';
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class PortfolioService{
-
-  getAllProjects(): Observable<any>{
-    return null;
+export class PortfolioService {
+  getAllProjects(): Project[] {
+    return Projects;
   }
-
 }
