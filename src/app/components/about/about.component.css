@@ -1,0 +1,20 @@
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  height: 6em;
+  width: 6em;
+}
+
+.skill-title {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid darkblue;
+  margin: 15px 0;
+}
+
+.skill-section {
+  margin: 15px 0;
+  padding: 15px;
+}

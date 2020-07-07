@@ -1,16 +1,4 @@
 <h1 class="title">My Projects</h1>
-<p class="stack">{{ description }}</p>
-<!-- <ul class="filters">
-  <li class="skill">
-    <a class="skill-item" href="">.NET</a>
-  </li>
-  <li class="skill">
-    <a class="skill-item" href="">MEAN</a>
-  </li>
-  <li class="skill">
-    <a class="skill-item" href="">MERN</a>
-  </li>
-</ul> -->
 <div class="row" *ngIf="projects.length > 0">
   <div class="col-md-6 col-sm-12" *ngFor="let project of projects">
     <div class="project">
@@ -19,7 +7,7 @@
         <div class="col-md-4">
           <div class="project-image">
             <img
-              src="../../../assets/img/{{ project.image }}.png"
+              src="../../../assets/img/technologies/{{ project.image }}.png"
               alt="project-photo"
             />
           </div>
@@ -27,15 +15,16 @@
         <div class="col-md-8">
           <h4 class="project-title">{{ project.title }}</h4>
           <p class="project-description">{{ project.description }}</p>
-          <div class="links">
-            <a class="project-link" href="{{ project.liveLink }}">View live</a>
-            <a class="project-link" href="{{ project.codeLink }}">View code</a>
+          <div class="project-links">
+            <a class="btn btn-outline-primary" href="{{ project.liveLink }}"
+              >View live</a
+            >
+            <a class="btn btn-outline-primary" href="{{ project.codeLink }}"
+              >View code</a
+            >
           </div>
         </div>
       </div>
-      <!-- <ul *ngIf="project.skills">
-        <li *ngFor="let skill of project.skills">{{skill}</li>
-      </ul>  -->
     </div>
   </div>
 </div>

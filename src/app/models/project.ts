@@ -6,6 +6,6 @@ export class Project {
     public description: string,
     public liveLink: string,
     public codeLink: string,
-    public skills: string[]
+    public stack: string
   ) {}
 }

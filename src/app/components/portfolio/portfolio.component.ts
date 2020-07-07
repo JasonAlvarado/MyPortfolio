@@ -10,12 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
   public projects: Project[];
-  public description: string;
 
-  constructor(private portfolioService: PortfolioService) {
-    this.description =
-      'Here you can watch my projects. The main area of my experience is .NET Framework / Core. But I also have projects in MEAN & MERN stack';
-  }
+  constructor(private portfolioService: PortfolioService) {}
 
   ngOnInit(): void {
     this.loadProjects();

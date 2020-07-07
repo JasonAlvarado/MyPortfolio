@@ -7,16 +7,6 @@
   text-align: justify;
 }
 
-.stack {
-  text-align: center;
-}
-
-.filters {
-  list-style-type: none;
-  width: 80%;
-  margin: 20px 0;
-}
-
 .skill {
   display: inline-block;
   width: 33%;
@@ -35,8 +25,10 @@
   color: white;
   text-decoration: none;
 }
-.links {
-  margin: 0 auto;
+
+.btn {
+  width: 40%;
+  margin: 0 5%;
 }
 
 /* Project title */
@@ -60,16 +52,6 @@
   text-align: center;
 }
 
-.project-link {
-  background: darkblue;
-  color: white;
-  margin: 0 30px;
-  padding: 4px;
-  text-decoration: none;
-}
-
-.project-link:hover {
-  background: white;
-  color: darkblue;
-  border: 1px solid darkblue;
+.project-links {
+  margin: 0 auto;
 }
