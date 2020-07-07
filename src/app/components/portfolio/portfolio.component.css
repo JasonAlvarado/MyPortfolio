@@ -1,0 +1,44 @@
+.project-description {
+  text-align: center;
+}
+
+.project-title {
+  display: inline-block;
+  width: 50%;
+}
+
+.project-year {
+  text-align: center;
+  width: 20%;
+  background-color: teal;
+  color: white;
+}
+
+.stack {
+  text-align: center;
+}
+
+.skill-list {
+  list-style-type: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.skill-item {
+  padding: 6px;
+  border-top: 1px solid dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+}
+
+.skill-item:hover {
+  width: 80px;
+  background: dodgerblue;
+  color: white;
+  text-decoration: none;
+}

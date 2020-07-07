@@ -1,0 +1,35 @@
+<div>
+  <h1 class="title" style="margin">Contact me</h1>
+  <p class="subtitle">Send me a message :D</p>
+  <form #contactForm action="" class="form" onsubmit="onSubmit()">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <p>
+          <input type="text" name="name" placeholder="Name" />
+        </p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <p>
+          <input type="email" name="email" placeholder="Email" />
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <p><input type="text" name="subject" placeholder="Subject" /><br /></p>
+        <p>
+          <textarea
+            name="message"
+            id="message"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+        </p>
+      </div>
+    </div>
+    <p class="submit">
+      <input type="submit" value="Send message" />
+    </p>
+  </form>
+  <p>You can also contact me throw <a href="#">Linkedin</a> </p>
+</div>

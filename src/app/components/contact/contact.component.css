@@ -1,0 +1,30 @@
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid darkblue;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid darkblue;
+}
+
+textarea {
+  max-height: 10em;
+  min-height: 10em;
+}
+
+input[type="submit"] {
+  background: darkblue;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
