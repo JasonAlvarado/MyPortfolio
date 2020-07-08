@@ -22,3 +22,47 @@ header {
   background: darkblue;
   color: white;
 }
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  font-size: 120%;
+}
+
+body {
+  background: #222222;
+  color: white;
+}
+
+.title {
+  width: 100%;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.link {
+  background: darkblue;
+  color: white;
+  margin: 20px;
+}
+
+.link:hover {
+  background: white;
+  color: black;
+}
+
+.link,
+.link:hover {
+  margin-top: 150px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}

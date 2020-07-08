@@ -1,9 +1,15 @@
+::placeholder {
+  color: white;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
   border: none;
+  background: transparent;
   border-bottom: 1px solid darkblue;
+  color: white;
 }
 
 input[type="text"]:focus,
@@ -13,6 +19,7 @@ textarea:focus {
   outline: none;
   border: none;
   border-bottom: 1px solid darkblue;
+  background: transparent;
 }
 
 textarea {

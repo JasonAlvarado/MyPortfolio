@@ -48,7 +48,7 @@ export var Projects = [
   {
     title: 'Hotel app',
     year: 2020,
-    image: 'mysql',
+    image: 'bootstrap',
     description: 'This app was created to reserve hotels, it use a public API',
     liveLink: 'github.com',
     codeLink: 'github.com',

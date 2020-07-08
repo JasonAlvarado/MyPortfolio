@@ -1,20 +1,33 @@
-.skill {
-  text-align: center;
+.skill-list {
+  list-style-type: none;
 }
 
-.skill img {
+.skill-item {
+  display: inline-block;
+  width: 25%;
   height: 6em;
-  width: 6em;
 }
 
-.skill-title {
+.skill-image {
   text-align: center;
-  padding: 5px;
-  border-bottom: 1px solid darkblue;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
-.skill-section {
-  margin: 15px 0;
-  padding: 15px;
+.skill-image img {
+  width: 4em;
+  height: 4em;
+}
+
+.about {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.col {
+  text-align: center !important;
+}
+
+.skill-description {
+  text-align: center !important;
 }

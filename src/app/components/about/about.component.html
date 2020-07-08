@@ -1,94 +1,44 @@
-<div class="jumbotron text-center">
+<div class="about">
   <h1>About</h1>
   <p>
-    The main area of my experience is .NET Framework / .NET Core. But I also
-    have projects in MEAN & MERN stack
+    I'm a systems enginering student. Always ready to improve my skills. The
+    main area of my experience is .NET Framework / .NET Core, but I also have
+    projects in MEAN & MERN stack. Below you can see the technologies that I use
+    for my projects
   </p>
 </div>
-<div class="content">
-  <div class="row">
-    <div class="col-md-6">
-      <section class="skill-section">
-        <h3 class="skill-title">Front end</h3>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="skill">
-              <img
-                src="../../../assets/img/technologies/angular.png"
-                alt="Angular"
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill">
-              <img src="../../../assets/img/technologies/react.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill">
-              <img
-                src="../../../assets/img/technologies/bootstrap.png"
-                alt=""
-              />
-            </div>
-          </div>
+<div class="row">
+  <section class="col-md-12 col-sm-12">
+    <h3 class="title">Front end</h3>
+    <div class="row">
+      <div *ngFor="let skill of skills.frontend" class="col-6 col-md-2">
+        <div class="skill-image">
+          <img src="assets/img/technologies/{{ skill.img }}" />
         </div>
-
-        
-      </section>
+        <p class="skill-description">{{ skill.name }}</p>
+      </div>
     </div>
-    <div class="col-md-6">
-      <section class="skill-section">
-        <h3 class="skill-title">Back end</h3>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="skill">
-              <img
-                src="../../../assets/img/technologies/net-framework.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill">
-              <img src="../../../assets/img/technologies/net-core.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill">
-              <img src="../../../assets/img/technologies/node-js.png" alt="" />
-            </div>
-          </div>
+  </section>
+  <section class="col-md-6">
+    <h3 class="title">Back end</h3>
+    <div class="row">
+      <div *ngFor="let skill of skills.backend" class="col-6 col-md-3">
+        <div class="skill-image">
+          <img src="assets/img/technologies/{{ skill.img }}" />
         </div>
-      </section>
+        <p class="skill-description">{{ skill.name }}</p>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 offset-md-3 col-sm-12">
-      <section class="skill-section">
-        <h3 class="skill-title">Database</h3>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="skill">
-              <img
-                src="../../../assets/img/technologies/sql-server.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill">
-              <img src="../../../assets/img/technologies/mongodb.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill">
-              <img src="../../../assets/img/technologies/mysql.png" alt="" />
-            </div>
-          </div>
+  </section>
+  <section class="col-md-6">
+    <h3 class="title">Database</h3>
+    <div class="row">
+      <div *ngFor="let skill of skills.database" class="col-6 col-md-4">
+        <div class="skill-image">
+          <img src="assets/img/technologies/{{ skill.img }}" />
         </div>
-      </section>
+        <p class="skill-description">{{ skill.name }}</p>
+      </div>
     </div>
-  </div>
+  </section>
 </div>

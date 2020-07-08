@@ -32,9 +32,8 @@
 }
 
 /* Project title */
-
 .project {
-  border: 1px solid darkblue;
+  border: 2px solid darkblue;
   margin: 10px 0;
   padding: 10px;
   border-radius: 10px;

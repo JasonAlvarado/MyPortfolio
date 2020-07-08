@@ -1,23 +1,17 @@
-import { PortfolioService } from '../../services/portfolio.service';
-import { Project } from './../../models/project';
+import { Projects } from './../../models/projects';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
-  providers: [PortfolioService],
 })
 export class PortfolioComponent implements OnInit {
-  public projects: Project[];
+  public projects: any;
 
-  constructor(private portfolioService: PortfolioService) {}
-
-  ngOnInit(): void {
-    this.loadProjects();
+  constructor() {
+    this.projects = Projects;
   }
 
-  loadProjects() {
-    this.projects = this.portfolioService.getAllProjects();
-  }
+  ngOnInit(): void {}
 }

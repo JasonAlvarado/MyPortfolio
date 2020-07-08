@@ -4,4 +4,12 @@
   margin: auto;
 }
 
+.home {
+  text-align: center;
+  margin: 25%;
+}
 
+.home h1,
+.home h2 {
+  margin-bottom: 20px;
+}
