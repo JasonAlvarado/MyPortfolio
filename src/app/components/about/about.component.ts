@@ -1,3 +1,4 @@
+import { Skill } from './../../models/Skill';
 import { Skills } from './../../models/skills';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
-  public skills: any;
+  public frontend: Skill[];
+  public backend: Skill[];
+  public tools: Skill[];
 
   constructor() {
-    this.skills = Skills;
+    this.frontend = Skills.frontend;
+    this.backend = Skills.backend;
+    this.tools = Skills.tools;
   }
 
   ngOnInit(): void {}

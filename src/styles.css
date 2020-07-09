@@ -1,8 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-.vertical-center {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+body {
+  background: #222222;
+  color: white;
+}
+
+header {
+  display: block;
+  background: darkblue;
+  color: white;
 }
 
 .title {
@@ -17,23 +21,12 @@
   text-align: center;
 }
 
-header {
-  display: block;
-  background: darkblue;
-  color: white;
-}
-
 .nav-link {
   color: white !important;
 }
 
 .nav-link:hover {
   font-size: 120%;
-}
-
-body {
-  background: #222222;
-  color: white;
 }
 
 .title {
@@ -45,7 +38,7 @@ body {
 .link {
   background: darkblue;
   color: white;
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .link:hover {
@@ -60,9 +53,4 @@ body {
   text-decoration: none;
   border-radius: 5px;
   text-decoration: none;
-}
-
-section {
-  margin: 0;
-  padding: 0;
 }

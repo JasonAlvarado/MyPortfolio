@@ -1,42 +1,23 @@
+.col-md-6,
+.col-sm-12 {
+  padding: 10px;
+  height: auto;
+}
+
+.project {
+  display: block;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: auto;
+  padding: 20px;
+}
+
 .project-title {
   text-align: center;
 }
 
 .project-description {
-  display: inline-block;
-  text-align: justify;
-}
-
-.skill {
-  display: inline-block;
-  width: 33%;
   text-align: center;
-}
-
-.skill-item {
-  padding: 6px;
-  border-top: 1px solid darkblue;
-  border-bottom: 1px solid darkblue;
-}
-
-.skill-item:hover {
-  width: 80px;
-  background: darkblue;
-  color: white;
-  text-decoration: none;
-}
-
-.btn {
-  width: 40%;
-  margin: 0 5%;
-}
-
-/* Project title */
-.project {
-  border: 2px solid darkblue;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 10px;
 }
 
 .project-image {

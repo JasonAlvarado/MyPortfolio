@@ -1,34 +1,30 @@
 <div>
   <h1 class="title">Contact me</h1>
-  <p class="subtitle">If you have any doubts / job offer, send me a message</p>
+  <p class="subtitle">
+    If you have any doubts or job offer, send me a message.
+  </p>
   <form #contactForm action="" class="form" onsubmit="onSubmit()">
     <div class="row">
       <div class="col-md-6 col-sm-12">
-        <p>
-          <input type="text" name="name" placeholder="Name" />
-        </p>
+        <input type="text" name="name" placeholder="Name" />
       </div>
       <div class="col-md-6 col-sm-12">
-        <p>
-          <input type="email" name="email" placeholder="Email" />
-        </p>
+        <input type="email" name="email" placeholder="Email" />
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 col-sm-12">
-        <p><input type="text" name="subject" placeholder="Subject" /><br /></p>
-        <p>
-          <textarea
-            name="message"
-            id="message"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-        </p>
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea
+          name="message"
+          id="message"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
       </div>
     </div>
     <p class="submit">
-      <input class="btn btn-primary" type="submit" value="Send message" />
+      <input class="submit" type="submit" value="Send message" />
     </p>
   </form>
   <p>

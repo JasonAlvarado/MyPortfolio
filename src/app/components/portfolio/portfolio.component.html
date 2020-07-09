@@ -2,27 +2,16 @@
 <div class="row" *ngIf="projects.length > 0">
   <div class="col-md-6 col-sm-12" *ngFor="let project of projects">
     <div class="project">
-      <!-- <p class="project-year">{{ project.year }}</p> -->
-      <div class="row">
-        <div class="col-md-4">
-          <div class="project-image">
-            <img
-              src="../../../assets/img/technologies/{{ project.image }}.png"
-              alt="project-photo"
-            />
-          </div>
-        </div>
-        <div class="col-md-8">
-          <h4 class="project-title">{{ project.title }}</h4>
-          <p class="project-description">{{ project.description }}</p>
-          <div class="project-links">
-            <a class="link" href="{{ project.liveLink }}"
-              >View live</a
-            >
-            <a class="link" href="{{ project.codeLink }}"
-              >View code</a
-            >
-          </div>
+      <h4 class="project-title">{{ project.title }}</h4>
+      <div class="project-image">
+        <img
+          src="assets/img/projects/{{ project.image }}.png"
+          alt="project-photo"
+        />
+        <p class="project-description">{{ project.description }}</p>
+        <div class="project-links">
+          <a class="link" href="{{ project.liveLink }}">View live</a>
+          <a class="link" href="{{ project.codeLink }}">View code</a>
         </div>
       </div>
     </div>

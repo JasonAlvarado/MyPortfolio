@@ -1,33 +1,31 @@
-.skill-list {
-  list-style-type: none;
-}
-
-.skill-item {
-  display: inline-block;
-  width: 25%;
-  height: 6em;
-}
-
-.skill-image {
-  text-align: center;
-  margin: 10px 0;
-}
-
-.skill-image img {
-  width: 4em;
-  height: 4em;
-}
-
 .about {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.col {
-  text-align: center !important;
+/* Skills */
+.skill-list {
+  list-style-type: none;
+}
+
+.skill-item {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.skill-image {
+  text-align: center;
+  display: inline-block;
+  width: 40%;
+}
+
+.skill-image img {
+  width: 2em;
+  height: 2em;
 }
 
 .skill-description {
-  text-align: center !important;
+  display: inline-block;
+  text-align: left !important;
 }

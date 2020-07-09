@@ -2,13 +2,18 @@
   color: white;
 }
 
+input,
+textarea {
+  margin-bottom: 25px;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
   border: none;
   background: transparent;
-  border-bottom: 1px solid darkblue;
+  border-bottom: 2px solid darkblue;
   color: white;
 }
 
@@ -18,7 +23,7 @@ textarea:focus {
   width: 100%;
   outline: none;
   border: none;
-  border-bottom: 1px solid darkblue;
+  border-bottom: 2px solid white;
   background: transparent;
 }
 
@@ -27,11 +32,19 @@ textarea {
   min-height: 10em;
 }
 
+p {
+  text-align: center;
+}
+
 input[type="submit"] {
   background: darkblue;
   color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
 }
 
-p {
-  text-align: center;
+input[type="submit"]:hover {
+  background: white;
+  color: darkblue;
 }

@@ -1,5 +1,5 @@
 <div class="about">
-  <h1>About</h1>
+  <h1 class="title">About</h1>
   <p>
     I'm a systems enginering student. Always ready to improve my skills. The
     main area of my experience is .NET Framework / .NET Core, but I also have
@@ -8,37 +8,37 @@
   </p>
 </div>
 <div class="row">
-  <section class="col-md-12 col-sm-12">
-    <h3 class="title">Front end</h3>
-    <div class="row">
-      <div *ngFor="let skill of skills.frontend" class="col-6 col-md-2">
+  <section class="col-md-4 col-sm-12">
+    <h2 class="title">Front end</h2>
+    <ul class="skill-list">
+      <li *ngFor="let skill of frontend" class="skill-item">
         <div class="skill-image">
-          <img src="assets/img/technologies/{{ skill.img }}" />
+          <img src="assets/img/technologies/{{ skill.image }}" />
         </div>
         <p class="skill-description">{{ skill.name }}</p>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
-  <section class="col-md-6">
-    <h3 class="title">Back end</h3>
-    <div class="row">
-      <div *ngFor="let skill of skills.backend" class="col-6 col-md-3">
+  <section class="col-md-4 col-sm-12">
+    <h2 class="title">Back end</h2>
+    <ul class="skill-list">
+      <li *ngFor="let skill of backend" class="skill-item">
         <div class="skill-image">
-          <img src="assets/img/technologies/{{ skill.img }}" />
+          <img src="assets/img/technologies/{{ skill.image }}" />
         </div>
         <p class="skill-description">{{ skill.name }}</p>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
-  <section class="col-md-6">
-    <h3 class="title">Database</h3>
-    <div class="row">
-      <div *ngFor="let skill of skills.database" class="col-6 col-md-4">
+  <section class="col-md-4 col-sm-12">
+    <h2 class="title">Dev tools</h2>
+    <ul class="skill-list">
+      <li *ngFor="let skill of tools" class="skill-item">
         <div class="skill-image">
-          <img src="assets/img/technologies/{{ skill.img }}" />
+          <img src="assets/img/technologies/{{ skill.image }}" />
         </div>
         <p class="skill-description">{{ skill.name }}</p>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 </div>
