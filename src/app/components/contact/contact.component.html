@@ -3,29 +3,29 @@
   <p class="subtitle">
     If you have any doubts or job offer, send me a message.
   </p>
-  <form #contactForm action="" class="form" onsubmit="onSubmit()">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <input type="text" name="name" placeholder="Name" />
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <input type="email" name="email" placeholder="Email" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <input type="text" name="subject" placeholder="Subject" />
-        <textarea
-          name="message"
-          id="message"
-          rows="10"
-          placeholder="Message"
-        ></textarea>
-      </div>
-    </div>
-    <p class="submit">
-      <input class="submit" type="submit" value="Send message" />
-    </p>
+  <form
+    class="form"
+    id="fs-frm"
+    name="simple-contact-form"
+    accept-charset="utf-8"
+    action="https://formspree.io/mdowpopg"
+    method="post"
+  >
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="name" id="full-name" required="" />
+      <label for="email-address">Email Address</label>
+      <input type="email" name="_replyto" id="email-address" required="" />
+      <label for="message">Message</label>
+      <textarea rows="5" name="message" id="message" required=""></textarea>
+      <input
+        type="hidden"
+        name="_subject"
+        id="email-subject"
+        value="Contact Form Submission"
+      />
+    </fieldset>
+    <input type="submit" value="Submit" />
   </form>
   <p>
     You can also contact me throw
