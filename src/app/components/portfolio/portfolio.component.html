@@ -1,18 +1,19 @@
 <h1 class="title">My Projects</h1>
 <div class="row" *ngIf="projects.length > 0">
-  <div class="col-md-6 col-sm-12" *ngFor="let project of projects">
-    <div class="project">
-      <h4 class="project-title">{{ project.title }}</h4>
-      <div class="project-image">
-        <img
-          src="assets/img/projects/{{ project.image }}.png"
-          alt="project-photo"
-        />
-        <p class="project-description">{{ project.description }}</p>
-        <div class="project-links">
-          <a class="link" href="{{ project.liveLink }}">View live</a>
-          <a class="link" href="{{ project.codeLink }}">View code</a>
-        </div>
+  <div class="col-sm-12 col-md-4" *ngFor="let project of projects">
+    <div class="card h-100" style="width: 100%;">
+      <img
+        class="card-img-top"
+        src="assets/img/projects/{{ project.image }}.png"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <p class="card-text">
+          {{ project.description }}
+        </p>
+        <a href="{{ project.liveLink }}" class="btn btn-primary">View live</a>
+        <a href="{{ project.codeLink }}" class="btn btn-primary">View code</a>
       </div>
     </div>
   </div>
