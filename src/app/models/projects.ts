@@ -4,8 +4,8 @@ export const Projects = [
     year: 2020,
     image: 'animinfo',
     description: 'Info about your favorite animes',
-    liveLink: '#',
-    codeLink: 'https://#/JasonAlvarado/',
+    liveLink: 'https://jasonalvarado.github.io/Animinfo/home',
+    codeLink: 'https://github.com/JasonAlvarado/Animinfo',
     stack: 'Angular using public API',
   },
   {
